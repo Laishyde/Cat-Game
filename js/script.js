@@ -12,7 +12,7 @@ const jump = () =>{
 const loop = setInterval(() =>{
     const pipePosition = pipe.offsetLeft;
     const catPosition = +window.getComputedStyle(cat).bottom.replace('px','');
-  if(pipePosition <= 44 && pipePosition > 0 && catPosition < 110){
+  if(pipePosition <= 30 && pipePosition > 0 && catPosition < 110){
     pipe.style.animation = 'none';
     pipe.style.left = `${pipePosition}px`;
 
