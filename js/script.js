@@ -21,11 +21,11 @@ const loop = setInterval(() =>{
      cat.src = './assets/imagens/gato-bravo.gif'; 
       clearInterval(loop);
   }
-  setTimeout(function () {
-    window.location.reload();
+  // setTimeout(function () {
+  //   window.location.reload();
 
     
-  },10000);
+  // },10000);
 
 },10);
 
