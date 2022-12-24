@@ -5,9 +5,9 @@ const jump = () =>{
     cat.classList.add('jump');
     setTimeout(()=>{
         cat.classList.remove('jump');
+     
 
-    }, 500);
-
+    }, 600);
 }
 const loop = setInterval(() =>{
     const pipePosition = pipe.offsetLeft;
@@ -15,15 +15,17 @@ const loop = setInterval(() =>{
   if(pipePosition <= 30 && pipePosition > 0 && catPosition < 110){
     pipe.style.animation = 'none';
     pipe.style.left = `${pipePosition}px`;
-
       cat.style.animation = 'none';
       cat.style.bottom = `${catPosition}px`;
-      cat.style.width = '75px'
-      cat.src = './assets/imagens/gato-bravo.gif'
+      cat.style.width = '75px';
+     cat.src = './assets/imagens/gato-bravo.gif'; 
       clearInterval(loop);
-    
   }
-  
+  setTimeout(function () {
+    window.location.reload();
+
+    
+  },10000);
 
 },10);
 
